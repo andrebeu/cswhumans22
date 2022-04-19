@@ -1,0 +1,1608 @@
+[2019-04-23 09:54:36 -0400] [73777] [CRITICAL] WORKER TIMEOUT (pid:73781)
+[2019-04-23 09:56:25 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73925)
+[2019-04-23 09:56:25 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73919)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73920)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73921)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73922)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73923)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73924)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73990)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73926)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73927)
+[2019-04-23 10:06:20 -0400] [73915] [CRITICAL] WORKER TIMEOUT (pid:73991)
+[2019-04-23 10:08:54 -0400] [74159] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74160] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74161] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74162] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74163] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74164] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74166] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74165] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:08:54 -0400] [74167] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:14 -0400] [74200] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:14 -0400] [74201] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:14 -0400] [74202] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74203] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74204] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74205] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74206] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74207] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:15 -0400] [74208] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74264] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74265] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74266] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74267] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74268] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74270] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74269] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74271] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 10:09:59 -0400] [74272] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/abeukers/anaconda/envs/psiturk/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/Users/abeukers/wd/csw/cswBehavioral/experiment_generation/csw_mturk_template/custom.py", line 65
+    print subj_filler_score)
+                           ^
+SyntaxError: invalid syntax
+[2019-04-23 16:04:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75845)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75846)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75851)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75853)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75855)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75858)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75859)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75860)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:75861)
+[2019-04-23 17:11:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:77533)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78635)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78636)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78637)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78638)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78639)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78640)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78641)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78642)
+[2019-04-23 18:05:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:78643)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80075)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80076)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80077)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80078)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80080)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80081)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80082)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80083)
+[2019-04-23 18:56:56 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80084)
+[2019-04-23 19:37:40 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80623)
+[2019-04-23 19:37:40 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80632)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80910)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80911)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80624)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80626)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80627)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80628)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80629)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80630)
+[2019-04-23 21:21:46 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:80631)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81615)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81616)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81618)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81619)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81620)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81621)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81622)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81623)
+[2019-04-23 23:53:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:81624)
+[2019-04-24 07:12:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82216)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82276)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82218)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82219)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82220)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82221)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82223)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82225)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82226)
+[2019-04-24 08:33:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:82227)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83491)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83492)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83493)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83494)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83495)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83496)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83497)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83498)
+[2019-04-24 08:40:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83499)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83584)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83585)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83586)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83587)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83588)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83589)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83590)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83591)
+[2019-04-24 10:18:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:83592)
+[2019-04-24 10:30:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84343)
+[2019-04-24 10:30:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84344)
+[2019-04-24 10:30:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84345)
+[2019-04-24 10:30:02 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84348)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84513)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84514)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84515)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84516)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84346)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84347)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84349)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84350)
+[2019-04-24 12:01:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:84351)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86080)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86081)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86082)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86083)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86084)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86085)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86086)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86079)
+[2019-04-24 13:16:08 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:86078)
+[2019-04-24 14:44:36 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87239)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87240)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87241)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87242)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87243)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87244)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87245)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87237)
+[2019-04-24 14:44:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:87238)
+[2019-04-24 16:53:16 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88526)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88525)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88528)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88529)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88530)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88531)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88532)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88533)
+[2019-04-24 16:53:17 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:88527)
+[2019-04-24 19:22:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89090)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89091)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89092)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89094)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89083)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89084)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89086)
+[2019-04-24 19:22:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89087)
+[2019-04-24 19:41:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91904)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91905)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91906)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91907)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:89093)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91900)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91901)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91902)
+[2019-04-24 19:41:55 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:91903)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92032)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92024)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92025)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92026)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92027)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92028)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92029)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92030)
+[2019-04-24 20:03:24 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92031)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92288)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92290)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92291)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92292)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92293)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92294)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92289)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92297)
+[2019-04-24 21:00:04 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92295)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92342)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92343)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92344)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92345)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92346)
+[2019-04-24 21:56:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92347)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92389)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92390)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92391)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92392)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92394)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92348)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92349)
+[2019-04-24 23:16:19 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92350)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92435)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92436)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92437)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92438)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92439)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92440)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92441)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92442)
+[2019-04-24 23:22:42 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92393)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92490)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92491)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92492)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92493)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92494)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92495)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92496)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92497)
+[2019-04-24 23:42:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92498)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92544)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92536)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92537)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92538)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92539)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92540)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92541)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92542)
+[2019-04-25 00:19:51 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92543)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92580)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92581)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92582)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92583)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92585)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92586)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92587)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92588)
+[2019-04-25 00:38:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92589)
+[2019-04-25 00:52:14 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92633)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92686)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92634)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92635)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92636)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92637)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92638)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92639)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92640)
+[2019-04-25 02:20:15 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92641)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92701)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92702)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92703)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92704)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92705)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92706)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92707)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92708)
+[2019-04-25 03:22:10 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92700)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92754)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92755)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92756)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92757)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92758)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92759)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92760)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92761)
+[2019-04-25 03:42:50 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92762)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92806)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92807)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92808)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92810)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92811)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92812)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92813)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92814)
+[2019-04-25 04:17:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92815)
+[2019-04-25 05:12:26 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92876)
+[2019-04-25 05:12:26 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92877)
+[2019-04-25 05:12:26 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92878)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92929)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92930)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92931)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92879)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92882)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92885)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92886)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92887)
+[2019-04-25 06:12:41 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92888)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92953)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92954)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92955)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92956)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92957)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92958)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92959)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92960)
+[2019-04-25 07:19:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92961)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:92999)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93000)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93001)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93002)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93003)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93004)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93005)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93006)
+[2019-04-25 07:46:13 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93007)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93056)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93057)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93058)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93050)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93051)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93052)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93053)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93054)
+[2019-04-25 07:49:29 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93055)
+[2019-04-25 08:18:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93101)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93102)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93103)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93104)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93105)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93106)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93107)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93108)
+[2019-04-25 08:18:54 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93109)
+[2019-04-25 09:31:48 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93369)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93366)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93367)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93368)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93364)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93370)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93371)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93372)
+[2019-04-25 09:31:49 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:93365)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94441)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94442)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94443)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94444)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94445)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94446)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94448)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94449)
+[2019-04-25 11:09:44 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:94450)
+[2019-04-25 11:53:37 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96388)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96389)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96390)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96391)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96392)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96393)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96394)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96395)
+[2019-04-25 11:53:38 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96396)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96962)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96963)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96964)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96965)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96966)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96967)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96968)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96969)
+[2019-04-25 13:00:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:96970)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97024)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97025)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97026)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97027)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97028)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97029)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97030)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97031)
+[2019-04-25 15:03:28 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:97032)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99298)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99299)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99300)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99301)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99302)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99297)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99304)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99305)
+[2019-04-25 15:57:53 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:99303)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:544)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:522)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:523)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:525)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:526)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:528)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:521)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:536)
+[2019-04-25 16:12:07 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:538)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:683)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:684)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:685)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:686)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:687)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:688)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:689)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:690)
+[2019-04-25 16:20:06 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:691)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:802)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:803)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:806)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:807)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:808)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:809)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:810)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:811)
+[2019-04-25 16:33:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:812)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:867)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:868)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:869)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:870)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:871)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:873)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:874)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:875)
+[2019-04-25 16:40:30 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:876)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:928)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:929)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:930)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:931)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:933)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:934)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:935)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:936)
+[2019-04-25 16:46:57 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:937)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1292)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1293)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1294)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1295)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1296)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1297)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1298)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1299)
+[2019-04-25 17:07:22 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1300)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1349)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1350)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1351)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1352)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1353)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1354)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1355)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1357)
+[2019-04-25 17:16:20 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1358)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1425)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1426)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1428)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1429)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1430)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1431)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1432)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1433)
+[2019-04-25 17:33:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1434)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1611)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1612)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1613)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1614)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1615)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1616)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1617)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1618)
+[2019-04-25 19:48:32 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1619)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1671)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1673)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1676)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1681)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1682)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1683)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1684)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1685)
+[2019-04-25 23:03:39 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:1686)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3277)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3278)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3279)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3280)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3281)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3282)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3283)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3284)
+[2019-04-26 07:33:45 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3285)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3296)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3312)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3300)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3301)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3302)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3307)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3308)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3310)
+[2019-04-26 07:46:05 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3295)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3346)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3347)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3348)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3349)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3350)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3351)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3352)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3353)
+[2019-04-26 09:19:33 -0400] [75771] [CRITICAL] WORKER TIMEOUT (pid:3354)
+[2019-04-26 09:30:37,412] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3ZOTGHDK5J7C0L2CVIU0QG7YOQAOSX'], 'workerId': [u'A1GXFMAC759VRM'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:30:41,010] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'37U1UTWH9WIXEEFJ9C5Z3KC2NJNR89'], 'workerId': [u'A3774HPOUKYTX7'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:30:42 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4269)
+[2019-04-26 09:34:09 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4273)
+[2019-04-26 09:34:23 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4270)
+[2019-04-26 09:35:46,473] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'374TNBHA8CRCHJR191ETX7QZKCOYQT'], 'workerId': [u'A2PPD2L5MX103Z'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:35:57,988] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'373ERPL3YP4GCY77CAGUUG8P1W8TR0'], 'workerId': [u'A1HE5S960X3I0E'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:36:01,154] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'374TNBHA8CRCHJR191ETX7QZKCOYQT'], 'workerId': [u'A2PPD2L5MX103Z'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:39:01 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4318)
+[2019-04-26 09:39:30 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4268)
+[2019-04-26 09:43:55,047] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3IGI0VL648GFK8A7NMDERMXS1R2ONL'], 'workerId': [u'A2NEFRREWF33YP'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:44:25 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4325)
+[2019-04-26 09:47:48,790] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3GFK2QRXXADJZSD3A882EZASD81W5F'], 'workerId': [u'A1GQBMKG5J6MX4'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 09:51:57 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4329)
+[2019-04-26 10:07:27 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4320)
+[2019-04-26 10:12:41,350] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3WSELTNVR4YODHLQAZU8ZQJF1SPTAX'], 'workerId': [u'A1C59M3HPCO503'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:16:08 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4323)
+[2019-04-26 10:16:20 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4332)
+[2019-04-26 10:16:58 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4271)
+[2019-04-26 10:17:16 +0000] [4315] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2019-04-26 10:18:33 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4754)
+[2019-04-26 10:23:50,359] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3M68NM076I3AA0WVGX81J6GBHOXR6N'], 'workerId': [u'A2XX2QRRBNC0Y7'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:24:04 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4315)
+[2019-04-26 10:26:31 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4758)
+[2019-04-26 10:36:51 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4747)
+[2019-04-26 10:40:21 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4764)
+[2019-04-26 10:40:21 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4751)
+[2019-04-26 10:48:22,138] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3907X2AHF111GMXFG3S9OYZK01OP2T'], 'workerId': [u'A9O273N0X06JS'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:48:32,689] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'39PAAFCODNW855OOLUL4VDXSM2LTVT'], 'workerId': [u'A33T45FNLQC14X'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:48:58,458] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'39PAAFCODNW855OOLUL4VDXSM2LTVT'], 'workerId': [u'A33T45FNLQC14X'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:49:02 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5164)
+[2019-04-26 10:49:21,143] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'39PAAFCODNW855OOLUL4VDXSM2LTVT'], 'workerId': [u'A33T45FNLQC14X'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:49:31,490] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3CPLWGV3MPVCDL61LXUWUW236SON9E'], 'workerId': [u'A2Q2WYJ2Q71HY1'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:49:42,286] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'39PAAFCODNW855OOLUL4VDXSM2LTVT'], 'workerId': [u'A33T45FNLQC14X'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 10:49:51 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4761)
+[2019-04-26 10:50:13 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:4756)
+[2019-04-26 10:55:04 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5174)
+[2019-04-26 10:59:18 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5176)
+[2019-04-26 10:59:18 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5181)
+[2019-04-26 10:59:43 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5169)
+[2019-04-26 11:05:15 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5579)
+[2019-04-26 11:07:39 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5178)
+[2019-04-26 11:10:15 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5602)
+[2019-04-26 11:13:32 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5168)
+[2019-04-26 11:14:06 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5583)
+[2019-04-26 11:21:02 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5580)
+[2019-04-26 12:00:19 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5600)
+[2019-04-26 12:37:21,105] ERROR in experiment: hit_assign_worker_id_not_set_in_consent (1002) {}
+[2019-04-26 12:37:52,460] ERROR in experiment: hit_assign_worker_id_not_set_in_exp (1003) {}
+[2019-04-26 12:55:25 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5610)
+[2019-04-26 13:06:18,116] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3C2NJ6JBKBD1D1L20OFHK9UP0N4N2E'], 'workerId': [u'A333STM8M95GJX'], 'hitId': [u'3BO3NEOQM0DVIJ8MQLQ2XZLKY0LIAR'], 'mode': [u'live']}
+[2019-04-26 13:29:34 +0000] [5608] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 129, in handle
+    req = six.next(parser)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 153, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 53, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 165, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 156, in get_data
+    data = unreader.read()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+error: [Errno 4] Interrupted system call
+[2019-04-26 13:42:11,152] ERROR in experiment: improper_inputs (1013) {}
+[2019-04-26 13:56:02 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5614)
+[2019-04-26 16:09:23 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:8023)
+[2019-04-26 16:09:23 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:6908)
+[2019-04-26 16:09:30 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:6417)
+[2019-04-28 18:29:50 +0000] [4264] [CRITICAL] WORKER TIMEOUT (pid:5605)
